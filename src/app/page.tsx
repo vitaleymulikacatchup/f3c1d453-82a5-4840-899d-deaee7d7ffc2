@@ -1,4 +1,4 @@
-use client
+"use client";
 import { SiteThemeProvider } from '@/components/sections/ThemeProvider';
 import NavbarLayoutFloatingInline from '@/components/navigation/NavbarLayoutFloatingInline';
 import FrameHero from '@/components/sections/layouts/hero/FrameHero';
@@ -13,18 +13,15 @@ export default function Home() {
     <SiteThemeProvider theme={{ styleVariant: 'funAndTrendy', colorTemplate: 1, textAnimation: 'slide' }}>
       <div id="nav" data-section="nav">
         <NavbarLayoutFloatingInline
-          navItems={
-            [
-              { name: 'hero', id: 'hero' },
-              { name: 'about', id: 'about' },
-              { name: 'how-to-buy', id: 'how-to-buy' },
-              { name: 'tokenomics', id: 'tokenomics' },
-              { name: 'faq', id: 'faq' },
-              { name: 'footer', id: 'footer' }
-            ]
-          }
+          navItems={[
+            { name: 'hero', id: 'hero' },
+            { name: 'about', id: 'about' },
+            { name: 'how-to-buy', id: 'how-to-buy' },
+            { name: 'tokenomics', id: 'tokenomics' },
+            { name: 'faq', id: 'faq' },
+            { name: 'footer', id: 'footer' }
+          ]}
           logoSrc="/images/logo.svg"
-          logoAlt="TrendWave Logo"
           buttonText="Get Early Access"
           onButtonClick={() => { /* Handle click */ }}
           className="navbar" 
